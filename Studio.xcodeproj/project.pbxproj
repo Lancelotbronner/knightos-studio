@@ -11,7 +11,7 @@
 		731ACACE2BA7D2DA0064F834 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731ACACD2BA7D2DA0064F834 /* ContentView.swift */; };
 		731ACAD02BA7D2DB0064F834 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 731ACACF2BA7D2DB0064F834 /* Assets.xcassets */; };
 		731ACAD42BA7D2DB0064F834 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 731ACAD32BA7D2DB0064F834 /* Preview Assets.xcassets */; };
-		735926AE2BBA59A900C7C812 /* z80eKit in Frameworks */ = {isa = PBXBuildFile; productRef = 735926AD2BBA59A900C7C812 /* z80eKit */; };
+		73A52FDB2C273D5200526BD6 /* StudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 73A52FDA2C273D5200526BD6 /* StudioKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +21,8 @@
 		731ACACF2BA7D2DB0064F834 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		731ACAD12BA7D2DB0064F834 /* Studio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Studio.entitlements; sourceTree = "<group>"; };
 		731ACAD32BA7D2DB0064F834 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		73A52FD72C27347A00526BD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		73A52FD92C27389500526BD6 /* StudioKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = StudioKit; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,7 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				735926AE2BBA59A900C7C812 /* z80eKit in Frameworks */,
+				73A52FDB2C273D5200526BD6 /* StudioKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +40,7 @@
 		731ACABF2BA7D2DA0064F834 = {
 			isa = PBXGroup;
 			children = (
+				73A52FD92C27389500526BD6 /* StudioKit */,
 				731ACACA2BA7D2DA0064F834 /* Studio */,
 				731ACAC92BA7D2DA0064F834 /* Products */,
 				735926AC2BBA59A900C7C812 /* Frameworks */,
@@ -55,12 +58,12 @@
 		731ACACA2BA7D2DA0064F834 /* Studio */ = {
 			isa = PBXGroup;
 			children = (
+				73A52FD72C27347A00526BD6 /* Info.plist */,
 				731ACAD12BA7D2DB0064F834 /* Studio.entitlements */,
 				731ACACB2BA7D2DA0064F834 /* App.swift */,
 				731ACACD2BA7D2DA0064F834 /* ContentView.swift */,
 				731ACACF2BA7D2DB0064F834 /* Assets.xcassets */,
 				731ACAD22BA7D2DB0064F834 /* Preview Content */,
-				731ACADA2BA7D38A0064F834 /* Views */,
 			);
 			path = Studio;
 			sourceTree = "<group>";
@@ -71,13 +74,6 @@
 				731ACAD32BA7D2DB0064F834 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		731ACADA2BA7D38A0064F834 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		735926AC2BBA59A900C7C812 /* Frameworks */ = {
@@ -104,7 +100,7 @@
 			);
 			name = Studio;
 			packageProductDependencies = (
-				735926AD2BBA59A900C7C812 /* z80eKit */,
+				73A52FDA2C273D5200526BD6 /* StudioKit */,
 			);
 			productName = "Studio z80";
 			productReference = 731ACAC82BA7D2DA0064F834 /* Studio.app */;
@@ -296,9 +292,11 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Studio/Preview Content\"";
 				DEVELOPMENT_TEAM = ULLNL4MHTP;
 				ENABLE_HARDENED_RUNTIME = YES;
+				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "z80 Studio";
+				INFOPLIST_FILE = Studio/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "KnightOS Studio";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -315,7 +313,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.4;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.lancelotbronner.studio-z80";
+				PRODUCT_BUNDLE_IDENTIFIER = org.knightos.studio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -337,9 +335,11 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Studio/Preview Content\"";
 				DEVELOPMENT_TEAM = ULLNL4MHTP;
 				ENABLE_HARDENED_RUNTIME = YES;
+				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "z80 Studio";
+				INFOPLIST_FILE = Studio/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "KnightOS Studio";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -356,7 +356,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.4;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.lancelotbronner.studio-z80";
+				PRODUCT_BUNDLE_IDENTIFIER = org.knightos.studio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -390,9 +390,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		735926AD2BBA59A900C7C812 /* z80eKit */ = {
+		73A52FDA2C273D5200526BD6 /* StudioKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = z80eKit;
+			productName = StudioKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

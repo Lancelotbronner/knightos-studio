@@ -6,23 +6,14 @@
 //
 
 import SwiftUI
-import Z80
 
 struct ContentView: View {
-	@State private var z80 = ObservableZ80()
 
 	var body: some View {
-		RegistersView()
-			.environment(z80)
-			.padding()
-			.toolbar {
-				Button("Step") {
-					z80.step()
-				}
-			}
+		Text("Hello World")
 	}
 }
 
 #Preview {
-    ContentView()
+	ContentView()
 }
