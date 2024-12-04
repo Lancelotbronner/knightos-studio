@@ -6,11 +6,13 @@
 //
 
 import SwiftUI
+import WelcomeFeature
+import StudioKit
 
 @main struct StudioApp: App {
 	var body: some Scene {
-		WindowGroup {
-			ContentView()
-		}
+		WelcomeScene()
+		
+		WorkspaceScene()
 	}
 }

@@ -3,34 +3,38 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 73;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		731ACACC2BA7D2DA0064F834 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731ACACB2BA7D2DA0064F834 /* App.swift */; };
-		731ACACE2BA7D2DA0064F834 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731ACACD2BA7D2DA0064F834 /* ContentView.swift */; };
-		731ACAD02BA7D2DB0064F834 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 731ACACF2BA7D2DB0064F834 /* Assets.xcassets */; };
-		731ACAD42BA7D2DB0064F834 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 731ACAD32BA7D2DB0064F834 /* Preview Assets.xcassets */; };
-		73A52FDB2C273D5200526BD6 /* StudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 73A52FDA2C273D5200526BD6 /* StudioKit */; };
+		73B71E2A2D00C85C0012C722 /* StudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 73B71E292D00C85C0012C722 /* StudioKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		731ACAC82BA7D2DA0064F834 /* Studio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Studio.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		731ACACB2BA7D2DA0064F834 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
-		731ACACD2BA7D2DA0064F834 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		731ACACF2BA7D2DB0064F834 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		731ACAD12BA7D2DB0064F834 /* Studio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Studio.entitlements; sourceTree = "<group>"; };
-		731ACAD32BA7D2DB0064F834 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		73A52FD72C27347A00526BD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		73A52FD92C27389500526BD6 /* StudioKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = StudioKit; sourceTree = "<group>"; };
+		736FF7202D009ADE00F2AB15 /* StudioKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = StudioKit; path = "/Users/lancelot/Developer/System/KnightOS/Applications/KnightOS Studio/StudioKit"; sourceTree = "<absolute>"; };
+		73B71E272D00C7010012C722 /* Studio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Studio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		73D6CE6B2CDE8A33008EEC64 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 731ACAC72BA7D2DA0064F834 /* Studio */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		73D6CE652CDE8A33008EEC64 /* Studio */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (73D6CE6B2CDE8A33008EEC64 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Studio; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		731ACAC52BA7D2DA0064F834 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73A52FDB2C273D5200526BD6 /* StudioKit in Frameworks */,
+				73B71E2A2D00C85C0012C722 /* StudioKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,43 +44,14 @@
 		731ACABF2BA7D2DA0064F834 = {
 			isa = PBXGroup;
 			children = (
-				73A52FD92C27389500526BD6 /* StudioKit */,
-				731ACACA2BA7D2DA0064F834 /* Studio */,
-				731ACAC92BA7D2DA0064F834 /* Products */,
-				735926AC2BBA59A900C7C812 /* Frameworks */,
+				736FF7202D009ADE00F2AB15 /* StudioKit */,
+				73D6CE652CDE8A33008EEC64 /* Studio */,
+				73B71E272D00C7010012C722 /* Studio.app */,
+				73B71E282D00C85C0012C722 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		731ACAC92BA7D2DA0064F834 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				731ACAC82BA7D2DA0064F834 /* Studio.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		731ACACA2BA7D2DA0064F834 /* Studio */ = {
-			isa = PBXGroup;
-			children = (
-				73A52FD72C27347A00526BD6 /* Info.plist */,
-				731ACAD12BA7D2DB0064F834 /* Studio.entitlements */,
-				731ACACB2BA7D2DA0064F834 /* App.swift */,
-				731ACACD2BA7D2DA0064F834 /* ContentView.swift */,
-				731ACACF2BA7D2DB0064F834 /* Assets.xcassets */,
-				731ACAD22BA7D2DB0064F834 /* Preview Content */,
-			);
-			path = Studio;
-			sourceTree = "<group>";
-		};
-		731ACAD22BA7D2DB0064F834 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				731ACAD32BA7D2DB0064F834 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		735926AC2BBA59A900C7C812 /* Frameworks */ = {
+		73B71E282D00C85C0012C722 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -98,12 +73,15 @@
 			);
 			dependencies = (
 			);
+			fileSystemSynchronizedGroups = (
+				73D6CE652CDE8A33008EEC64 /* Studio */,
+			);
 			name = Studio;
 			packageProductDependencies = (
-				73A52FDA2C273D5200526BD6 /* StudioKit */,
+				73B71E292D00C85C0012C722 /* StudioKit */,
 			);
 			productName = "Studio z80";
-			productReference = 731ACAC82BA7D2DA0064F834 /* Studio.app */;
+			productReference = 73B71E272D00C7010012C722 /* Studio.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -122,7 +100,6 @@
 				};
 			};
 			buildConfigurationList = 731ACAC32BA7D2DA0064F834 /* Build configuration list for PBXProject "Studio" */;
-			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -130,7 +107,12 @@
 				Base,
 			);
 			mainGroup = 731ACABF2BA7D2DA0064F834;
-			productRefGroup = 731ACAC92BA7D2DA0064F834 /* Products */;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				73D6CE5B2CDE8A22008EEC64 /* XCLocalSwiftPackageReference "StudioKit" */,
+			);
+			preferredProjectObjectVersion = 73;
+			productRefGroup = 731ACABF2BA7D2DA0064F834;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -144,8 +126,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				731ACAD42BA7D2DB0064F834 /* Preview Assets.xcassets in Resources */,
-				731ACAD02BA7D2DB0064F834 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,8 +136,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				731ACACE2BA7D2DA0064F834 /* ContentView.swift in Sources */,
-				731ACACC2BA7D2DA0064F834 /* App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,14 +286,15 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = org.knightos.studio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
+				STUDIO_CHANNEL = dev;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -351,10 +330,10 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = org.knightos.studio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -389,9 +368,17 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCLocalSwiftPackageReference section */
+		73D6CE5B2CDE8A22008EEC64 /* XCLocalSwiftPackageReference "StudioKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = StudioKit;
+		};
+/* End XCLocalSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
-		73A52FDA2C273D5200526BD6 /* StudioKit */ = {
+		73B71E292D00C85C0012C722 /* StudioKit */ = {
 			isa = XCSwiftPackageProductDependency;
+			package = 73D6CE5B2CDE8A22008EEC64 /* XCLocalSwiftPackageReference "StudioKit" */;
 			productName = StudioKit;
 		};
 /* End XCSwiftPackageProductDependency section */

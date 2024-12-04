@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Represents a physical file as part of a workspace item.
 public struct WorkspaceFile {
 
 	public let url: URL
@@ -14,9 +15,8 @@ public struct WorkspaceFile {
 	@usableFromInline var _sourceControl: SourceControlStatus?
 	@usableFromInline var _resourceValues: URLResourceValues?
 
-	public init(at url: URL) throws {
+	public init(at url: URL) {
 		self.url = url
-		_handle = File
 	}
 
 }

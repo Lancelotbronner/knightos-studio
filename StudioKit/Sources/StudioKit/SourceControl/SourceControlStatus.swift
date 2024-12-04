@@ -1,6 +1,6 @@
 //
 //  SourceControlFile.swift
-//  
+//  StudioKit
 //
 //  Created by Christophe Bronner on 2024-06-22.
 //

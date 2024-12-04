@@ -1,20 +1,29 @@
 //
 //  Workspace.swift
-//  
+//  Studio
 //
-//  Created by Christophe Bronner on 2024-06-22.
+//  Created by Christophe Bronner on 2024-06-26.
 //
 
-import Foundation
-import Combine
+public struct Workspace: Sendable, Codable {
+	public static let version = 1
 
-@Observable
-public final class Workspace {
+	public init() { }
 
-	public let url: URL
+	public private(set) var version = Workspace.version
 
-	@inlinable public init(at url: URL) {
-		self.url = url
+	public var contents: [WorkspaceContent] = []
+}
+
+public enum WorkspaceContent: Sendable, Codable {
+	/// Uses the current document URL
+	case document
+	/// Points to a local folder
+	case folder(WorkspaceContent.FolderItem)
+}
+
+extension WorkspaceContent {
+	public struct FolderItem: Sendable, Codable {
+		public let path: String
 	}
-
 }
