@@ -11,8 +11,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		736FF7202D009ADE00F2AB15 /* StudioKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = StudioKit; path = "/Users/lancelot/Developer/System/KnightOS/Applications/KnightOS Studio/StudioKit"; sourceTree = "<absolute>"; };
-		73B71E272D00C7010012C722 /* Studio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Studio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		73C2784D2D4AC0B6008B4094 /* StudioKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = StudioKit; sourceTree = "<group>"; };
+		73C278642D4AC18D008B4094 /* Studio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Studio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		73C2788F2D4AC213008B4094 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -44,18 +45,11 @@
 		731ACABF2BA7D2DA0064F834 = {
 			isa = PBXGroup;
 			children = (
-				736FF7202D009ADE00F2AB15 /* StudioKit */,
+				73C2788F2D4AC213008B4094 /* README.md */,
+				73C2784D2D4AC0B6008B4094 /* StudioKit */,
 				73D6CE652CDE8A33008EEC64 /* Studio */,
-				73B71E272D00C7010012C722 /* Studio.app */,
-				73B71E282D00C85C0012C722 /* Frameworks */,
+				73C278642D4AC18D008B4094 /* Studio.app */,
 			);
-			sourceTree = "<group>";
-		};
-		73B71E282D00C85C0012C722 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -81,7 +75,7 @@
 				73B71E292D00C85C0012C722 /* StudioKit */,
 			);
 			productName = "Studio z80";
-			productReference = 73B71E272D00C7010012C722 /* Studio.app */;
+			productReference = 73C278642D4AC18D008B4094 /* Studio.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */

@@ -16,8 +16,8 @@ let package = Package(
 		]),
 	],
 	dependencies: [
-		.package(url: "https://github.com/lancelotbronner/klib2.git", branch: "main"),
-		.package(url: "https://github.com/lancelotbronner/kpkg2.git", branch: "main"),
+//		.package(url: "https://github.com/lancelotbronner/knightos-klib", branch: "main"),
+//		.package(url: "https://github.com/lancelotbronner/knightos-kpack", branch: "main"),
 	],
 	targets: [
 		.target(name: "CoreStudio"),
